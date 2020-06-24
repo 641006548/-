@@ -1,0 +1,11 @@
+D:\WorkSpace\MyGit\THEPractice\E-Genealogy\bin\Debug\E-Genealogy.exe.config
+D:\WorkSpace\MyGit\THEPractice\E-Genealogy\bin\Debug\E-Genealogy.exe
+D:\WorkSpace\MyGit\THEPractice\E-Genealogy\bin\Debug\E-Genealogy.pdb
+D:\WorkSpace\MyGit\THEPractice\E-Genealogy\obj\Debug\E-Genealogy.csprojAssemblyReference.cache
+D:\WorkSpace\MyGit\THEPractice\E-Genealogy\obj\Debug\E_Genealogy.LoginForm.resources
+D:\WorkSpace\MyGit\THEPractice\E-Genealogy\obj\Debug\E_Genealogy.MainForm.resources
+D:\WorkSpace\MyGit\THEPractice\E-Genealogy\obj\Debug\E_Genealogy.Properties.Resources.resources
+D:\WorkSpace\MyGit\THEPractice\E-Genealogy\obj\Debug\E-Genealogy.csproj.GenerateResource.cache
+D:\WorkSpace\MyGit\THEPractice\E-Genealogy\obj\Debug\E-Genealogy.csproj.CoreCompileInputs.cache
+D:\WorkSpace\MyGit\THEPractice\E-Genealogy\obj\Debug\E-Genealogy.exe
+D:\WorkSpace\MyGit\THEPractice\E-Genealogy\obj\Debug\E-Genealogy.pdb

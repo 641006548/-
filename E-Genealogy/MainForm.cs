@@ -12,9 +12,16 @@ namespace E_Genealogy
 {
     public partial class MainForm : Form
     {
-        public MainForm()
+        private readonly LoginForm loginForm;
+        public MainForm(LoginForm loginForm)
         {
+            this.loginForm = loginForm;
             InitializeComponent();
+        }
+
+        private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.loginForm.Close();
         }
     }
 }
