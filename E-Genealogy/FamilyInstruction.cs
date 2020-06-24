@@ -12,19 +12,23 @@ namespace E_Genealogy
     class FamilyInstruction
     {
         private int familyInstructionID;
+        private string genealogyID;
         private string familyInstructionContent;
 
         public int FamilyInstructionID { get => familyInstructionID; set => familyInstructionID = value; }
+        public string GenealogyID { get => genealogyID; set => genealogyID = value; }
         public string FamilyInstructionContent { get => familyInstructionContent; set => familyInstructionContent = value; }
 
         /// <summary>
         /// 构造一个FamilyInstruction类数据
         /// </summary>
         /// <param name="familyInstructionID">家训编号</param>
+        /// <param name="genealogyID">家训所属族谱ID</param>
         /// <param name="familyInstructionContent">家训内容</param>
-        public FamilyInstruction(int familyInstructionID = 1, string familyInstructionContent = "default")
+        public FamilyInstruction(int familyInstructionID = 1, string genealogyID = "default", string familyInstructionContent = "default")
         {
             this.familyInstructionID = familyInstructionID;
+            this.genealogyID = genealogyID;
             this.familyInstructionContent = familyInstructionContent;
         }
     }

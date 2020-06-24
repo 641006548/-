@@ -12,6 +12,7 @@ namespace E_Genealogy
     class Member
     {
         private string memberID;
+        private string genealogyID;
         private string memberName;
         private string memberSex;
         private string memberLive;
@@ -21,10 +22,9 @@ namespace E_Genealogy
         private string memberOrigin;
         private string memberBirth;
         private string memberDied;
-        private string memberRank;
-        private string memberGeneration;
 
         public string MemberID { get => memberID; set => memberID = value; }
+        public string GenealogyID { get => genealogyID; set => genealogyID = value; }
         public string MemberName { get => memberName; set => memberName = value; }
         public string MemberSex { get => memberSex; set => memberSex = value; }
         public string MemberLive { get => memberLive; set => memberLive = value; }
@@ -34,13 +34,13 @@ namespace E_Genealogy
         public string MemberOrigin { get => memberOrigin; set => memberOrigin = value; }
         public string MemberBirth { get => memberBirth; set => memberBirth = value; }
         public string MemberDied { get => memberDied; set => memberDied = value; }
-        public string MemberRank { get => memberRank; set => memberRank = value; }
-        public string MemberGeneration { get => memberGeneration; set => memberGeneration = value; }
+
 
         /// <summary>
         /// 构造一个Member类数据。
         /// </summary>
         /// <param name="memberID">成员ID</param>
+        /// <param name="genealogyID">成员所属族谱ID</param>
         /// <param name="memberName">成员姓名</param>
         /// <param name="memberSex">性别</param>
         /// <param name="memberLive">居住地</param>
@@ -50,14 +50,12 @@ namespace E_Genealogy
         /// <param name="memberOrigin">出生地</param>
         /// <param name="memberBirth">生日日期</param>
         /// <param name="memberDied">死亡日期</param>
-        /// <param name="memberRank">排行</param>
-        /// <param name="memberGeneration">字辈</param>
-        public Member(string memberID, string memberName = "张三", string memberSex = "男", string memberLive = "default",
+        public Member(string memberID, string genealogyID = "default", string memberName = "张三", string memberSex = "男", string memberLive = "default",
             string spouseID = "0000", string memberFather = "default", string memberAddress = "default",
-            string memberOrigin = "default", string memberBirth = "default", string memberDied = "default",
-            string memberRank = "default", string memberGeneration = "default")
+            string memberOrigin = "default", string memberBirth = "default", string memberDied = "default")
         {
             this.memberID = memberID;
+            this.genealogyID = genealogyID;
             this.memberName = memberName;
             this.memberSex = memberSex;
             this.memberLive = memberLive;
@@ -67,8 +65,6 @@ namespace E_Genealogy
             this.memberOrigin = memberOrigin;
             this.memberBirth = memberBirth;
             this.memberDied = memberDied;
-            this.memberRank = memberRank;
-            this.memberGeneration = memberGeneration;
         }
     }
 }
