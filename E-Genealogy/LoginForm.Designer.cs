@@ -78,8 +78,10 @@
             this.Controls.Add(this.loginBT);
             this.Controls.Add(this.passwordBOX);
             this.Controls.Add(this.genealogyIDBOX);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "LoginForm";
-            this.Text = "LoginForm";
+            this.Text = "电子族谱登录";
             this.ResumeLayout(false);
             this.PerformLayout();
 
