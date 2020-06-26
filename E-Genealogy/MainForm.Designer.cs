@@ -43,35 +43,41 @@
             // 
             this.button1.BackColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(0, 0);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 50);
+            this.button1.Size = new System.Drawing.Size(150, 40);
             this.button1.TabIndex = 0;
             this.button1.Text = "综合查询（关系树状图）模块入口";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(0, 50);
+            this.button2.Location = new System.Drawing.Point(0, 40);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(200, 50);
+            this.button2.Size = new System.Drawing.Size(150, 40);
             this.button2.TabIndex = 1;
             this.button2.Text = "个人信息查询模块入口";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(0, 100);
+            this.button3.Location = new System.Drawing.Point(0, 80);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(200, 50);
+            this.button3.Size = new System.Drawing.Size(150, 40);
             this.button3.TabIndex = 2;
             this.button3.Text = "近亲查询模块入口";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(0, 150);
+            this.button4.Location = new System.Drawing.Point(0, 120);
+            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(200, 50);
+            this.button4.Size = new System.Drawing.Size(150, 40);
             this.button4.TabIndex = 3;
             this.button4.Text = "族谱管理模块入口";
             this.button4.UseVisualStyleBackColor = true;
@@ -79,9 +85,10 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(0, 200);
+            this.button5.Location = new System.Drawing.Point(0, 160);
+            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(200, 50);
+            this.button5.Size = new System.Drawing.Size(150, 40);
             this.button5.TabIndex = 4;
             this.button5.Text = "成员管理（添加成员）模块入口";
             this.button5.UseVisualStyleBackColor = true;
@@ -89,9 +96,10 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(0, 250);
+            this.button6.Location = new System.Drawing.Point(0, 200);
+            this.button6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(200, 50);
+            this.button6.Size = new System.Drawing.Size(150, 40);
             this.button6.TabIndex = 5;
             this.button6.Text = "修改成员模块入口";
             this.button6.UseVisualStyleBackColor = true;
@@ -107,19 +115,21 @@
             this.treeViewPanel.Controls.Add(this.button3);
             this.treeViewPanel.Controls.Add(this.button4);
             this.treeViewPanel.Location = new System.Drawing.Point(0, 0);
+            this.treeViewPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.treeViewPanel.Name = "treeViewPanel";
-            this.treeViewPanel.Size = new System.Drawing.Size(200, 600);
+            this.treeViewPanel.Size = new System.Drawing.Size(150, 480);
             this.treeViewPanel.TabIndex = 6;
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(982, 553);
+            this.ClientSize = new System.Drawing.Size(736, 442);
             this.Controls.Add(this.treeViewPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.Name = "MainForm";
             this.Text = "电子族谱";

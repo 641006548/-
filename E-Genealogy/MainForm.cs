@@ -38,5 +38,17 @@ namespace E_Genealogy
             GenealogyForm genealogyForm = new GenealogyForm();
             genealogyForm.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            NearRelQuery nearRelQuery = new NearRelQuery();
+            nearRelQuery.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            PerInfQuery perInfQuery = new PerInfQuery();
+            perInfQuery.Show();
+        }
     }
 }

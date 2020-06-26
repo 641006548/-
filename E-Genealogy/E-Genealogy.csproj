@@ -86,6 +86,14 @@
     <Compile Include="ModifyGenealogyForm.Designer.cs">
       <DependentUpon>ModifyGenealogyForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="NearRelQuery.cs" />
+    <Compile Include="NearRelQuery.Designer.cs">
+      <DependentUpon>NearRelQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PerInfQuery.cs" />
+    <Compile Include="PerInfQuery.Designer.cs">
+      <DependentUpon>PerInfQuery.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewGenealogy.cs">
@@ -111,6 +119,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ModifyGenealogyForm.resx">
       <DependentUpon>ModifyGenealogyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NearRelQuery.resx">
+      <DependentUpon>NearRelQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PerInfQuery.resx">
+      <DependentUpon>PerInfQuery.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
