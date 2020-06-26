@@ -23,5 +23,14 @@ namespace E_Genealogy
         {
             this.loginForm.Close();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            
+         MemberManage mm = new MemberManage();
+         mm.Show();
+
+
+        }
     }
 }

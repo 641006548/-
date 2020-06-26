@@ -9,3 +9,15 @@ D:\WorkSpace\MyGit\THEPractice\E-Genealogy\obj\Debug\E-Genealogy.csproj.Generate
 D:\WorkSpace\MyGit\THEPractice\E-Genealogy\obj\Debug\E-Genealogy.csproj.CoreCompileInputs.cache
 D:\WorkSpace\MyGit\THEPractice\E-Genealogy\obj\Debug\E-Genealogy.exe
 D:\WorkSpace\MyGit\THEPractice\E-Genealogy\obj\Debug\E-Genealogy.pdb
+D:\SystemDevelop\THEPractice\E-Genealogy\bin\Debug\E-Genealogy.exe.config
+D:\SystemDevelop\THEPractice\E-Genealogy\bin\Debug\E-Genealogy.exe
+D:\SystemDevelop\THEPractice\E-Genealogy\bin\Debug\E-Genealogy.pdb
+D:\SystemDevelop\THEPractice\E-Genealogy\obj\Debug\E-Genealogy.csprojAssemblyReference.cache
+D:\SystemDevelop\THEPractice\E-Genealogy\obj\Debug\E_Genealogy.LoginForm.resources
+D:\SystemDevelop\THEPractice\E-Genealogy\obj\Debug\E_Genealogy.MainForm.resources
+D:\SystemDevelop\THEPractice\E-Genealogy\obj\Debug\E_Genealogy.Properties.Resources.resources
+D:\SystemDevelop\THEPractice\E-Genealogy\obj\Debug\E-Genealogy.csproj.GenerateResource.cache
+D:\SystemDevelop\THEPractice\E-Genealogy\obj\Debug\E-Genealogy.csproj.CoreCompileInputs.cache
+D:\SystemDevelop\THEPractice\E-Genealogy\obj\Debug\E-Genealogy.exe
+D:\SystemDevelop\THEPractice\E-Genealogy\obj\Debug\E-Genealogy.pdb
+D:\SystemDevelop\THEPractice\E-Genealogy\obj\Debug\E_Genealogy.MemberManage.resources
