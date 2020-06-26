@@ -32,6 +32,7 @@
             this.genealogyIDBOX = new System.Windows.Forms.TextBox();
             this.passwordBOX = new System.Windows.Forms.TextBox();
             this.loginBT = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // genealogyIDBOX
@@ -59,13 +60,23 @@
             // 
             // loginBT
             // 
-            this.loginBT.Location = new System.Drawing.Point(354, 289);
+            this.loginBT.Location = new System.Drawing.Point(227, 289);
             this.loginBT.Name = "loginBT";
             this.loginBT.Size = new System.Drawing.Size(75, 23);
             this.loginBT.TabIndex = 0;
             this.loginBT.Text = "登录";
             this.loginBT.UseVisualStyleBackColor = true;
             this.loginBT.Click += new System.EventHandler(this.LoginBT_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(497, 289);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "注册";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // LoginForm
             // 
@@ -75,6 +86,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.loginBT);
             this.Controls.Add(this.passwordBOX);
             this.Controls.Add(this.genealogyIDBOX);
@@ -92,5 +104,6 @@
         private System.Windows.Forms.TextBox genealogyIDBOX;
         private System.Windows.Forms.TextBox passwordBOX;
         private System.Windows.Forms.Button loginBT;
+        private System.Windows.Forms.Button button1;
     }
 }

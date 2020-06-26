@@ -32,5 +32,11 @@ namespace E_Genealogy
 
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            GenealogyForm genealogyForm = new GenealogyForm();
+            genealogyForm.Show();
+        }
     }
 }

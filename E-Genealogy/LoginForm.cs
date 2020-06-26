@@ -76,5 +76,11 @@ namespace E_Genealogy
             MainForm mainForm = new MainForm(this);
             mainForm.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            CreatGenealogyForm creatGenealogyForm = new CreatGenealogyForm();
+            creatGenealogyForm.Show();
+        }
     }
 }

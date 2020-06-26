@@ -46,9 +46,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CreatGenealogyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreatGenealogyForm.Designer.cs">
+      <DependentUpon>CreatGenealogyForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Event.cs" />
     <Compile Include="FamilyInstruction.cs" />
     <Compile Include="Genealogy.cs" />
+    <Compile Include="GenealogyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenealogyForm.Designer.cs">
+      <DependentUpon>GenealogyForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,8 +80,26 @@
     <Compile Include="MemberManage.Designer.cs">
       <DependentUpon>MemberManage.cs</DependentUpon>
     </Compile>
+    <Compile Include="ModifyGenealogyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifyGenealogyForm.Designer.cs">
+      <DependentUpon>ModifyGenealogyForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewGenealogy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewGenealogy.Designer.cs">
+      <DependentUpon>ViewGenealogy.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CreatGenealogyForm.resx">
+      <DependentUpon>CreatGenealogyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenealogyForm.resx">
+      <DependentUpon>GenealogyForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -78,6 +108,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MemberManage.resx">
       <DependentUpon>MemberManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyGenealogyForm.resx">
+      <DependentUpon>ModifyGenealogyForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -88,6 +121,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ViewGenealogy.resx">
+      <DependentUpon>ViewGenealogy.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
