@@ -61,6 +61,12 @@
     <Compile Include="GenealogyForm.Designer.cs">
       <DependentUpon>GenealogyForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="GenealogyTreeView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenealogyTreeView.Designer.cs">
+      <DependentUpon>GenealogyTreeView.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +117,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GenealogyForm.resx">
       <DependentUpon>GenealogyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenealogyTreeView.resx">
+      <DependentUpon>GenealogyTreeView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>

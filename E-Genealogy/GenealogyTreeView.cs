@@ -14,8 +14,10 @@ namespace E_Genealogy
 {
     public partial class GenealogyTreeView : Form
     {
-        public GenealogyTreeView()
+        private string genealogyID;
+        public GenealogyTreeView(string genealogyID)
         {
+            this.genealogyID = genealogyID;
             InitializeComponent();
         }
 
@@ -52,7 +54,7 @@ namespace E_Genealogy
             int subCountFlag = 0;   //画顶层结点时用到的偏移量
             int x = 0;              //结点矩形图左上角X坐标
             int y = 0;              //结点矩形图左上角Y坐标
-            int picX = pictureBox1.Width;   //绘图区域水平长度
+            int picX = this.Width;   //绘图区域水平长度
             int picY = pictureBox1.Height;  //绘图区域竖直长度
             StringFormat sf = new StringFormat();
             sf.Alignment = StringAlignment.Center;
@@ -79,7 +81,7 @@ namespace E_Genealogy
             string connStr = @"Server=.; Initial Catalog=E-Genealogy; Integrated Security=True";
             SqlConnection conn = new SqlConnection(connStr);
             conn.Open();
-            string sql = @"SELECT * FROM Member WHERE Genealogy_ID = '2018516'";
+            string sql = @"SELECT * FROM Member WHERE Genealogy_ID = '"+ this.genealogyID +"'";
             SqlCommand cmd = new SqlCommand(sql, conn);
             SqlDataReader dr = cmd.ExecuteReader();
             while (dr.Read())                                   //将数据库中的数据保存在结构体中
@@ -112,7 +114,7 @@ namespace E_Genealogy
             sizeF = g.MeasureString(Member[0].memberName, font);    //得到字体的长度和宽度
             sizeF.Width += 10;                                      //为了使矩形框与字体不显得紧凑
             s = sizeF.ToSize();
-            x = picXMid - s.Width;
+            x = picXMid - s.Width * 2;
             y = 30;
             loc = new Point(x, y);
             rect = new Rectangle(loc, s);
@@ -125,7 +127,7 @@ namespace E_Genealogy
             g.DrawRectangle(Pens.Black, rect);
             g.DrawString(spouseName, font, Brushes.Black, rect, sf);
 
-            startP = new Point(picXMid, y + s.Height);
+            startP = new Point(rect.X, y + s.Height);
             
             Curent = 0;
             FatherMemberID = Member[0].memberID;
@@ -150,7 +152,7 @@ namespace E_Genealogy
                         sizeF = g.MeasureString(CurentMemberName, font);
                         sizeF.Width += 10;
                         s = sizeF.ToSize();
-                        x = 400 + (Member[i].RankFlag - 1) * 155;                        //得到当前矩形的左上横坐标
+                        x = 50 + (Member[i].RankFlag - 1) * 155;                        //得到当前矩形的左上横坐标
                         y = 100 + (Member[i].GenerationFlag - 2) * 100;                 //得到当前矩形的左上纵坐标
                         endP = new Point(x + s.Width / 2, y);                           //得到直线末端的坐标
                         loc = new Point(x, y);
@@ -194,7 +196,7 @@ namespace E_Genealogy
                             FatherMemberID = Member[j].memberID;
                             FatherGenerationFlag = Member[j].GenerationFlag;
                             RankMemberFlag++;
-                            startP = new Point(400 + (Member[j].RankFlag - 1) * 155 + s.Width / 2, 100 + (Member[j].GenerationFlag - 2) * 100 + s.Height);
+                            startP = new Point(50 + (Member[j].RankFlag - 1) * 155 + s.Width / 2, 100 + (Member[j].GenerationFlag - 2) * 100 + s.Height);
                             break;
                         }
                     }

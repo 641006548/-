@@ -61,3 +61,4 @@ D:\WorkSpace\MyGit\THEPractice\E-Genealogy\obj\Debug\E_Genealogy.ModifyGenealogy
 D:\WorkSpace\MyGit\THEPractice\E-Genealogy\obj\Debug\E_Genealogy.ViewGenealogy.resources
 D:\WorkSpace\MyGit\THEPractice\E-Genealogy\obj\Debug\E_Genealogy.PerInfQueryForm.resources
 D:\WorkSpace\MyGit\THEPractice\E-Genealogy\obj\Debug\E_Genealogy.NearRelQueryForm.resources
+D:\WorkSpace\MyGit\THEPractice\E-Genealogy\obj\Debug\E_Genealogy.GenealogyTreeView.resources

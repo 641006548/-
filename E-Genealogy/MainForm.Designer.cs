@@ -47,8 +47,9 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(200, 50);
             this.button1.TabIndex = 0;
-            this.button1.Text = "关系树状图（暂未实现）";
+            this.button1.Text = "关系树状图";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -115,6 +116,7 @@
             // 
             // mainPanel
             // 
+            this.mainPanel.BackColor = System.Drawing.Color.Transparent;
             this.mainPanel.Location = new System.Drawing.Point(200, 0);
             this.mainPanel.Name = "mainPanel";
             this.mainPanel.Size = new System.Drawing.Size(200, 100);

@@ -62,7 +62,7 @@
             // 
             this.loginBT.Location = new System.Drawing.Point(289, 289);
             this.loginBT.Name = "loginBT";
-            this.loginBT.Size = new System.Drawing.Size(75, 23);
+            this.loginBT.Size = new System.Drawing.Size(80, 30);
             this.loginBT.TabIndex = 0;
             this.loginBT.Text = "登录";
             this.loginBT.UseVisualStyleBackColor = true;
@@ -70,9 +70,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(424, 289);
+            this.button1.Location = new System.Drawing.Point(419, 289);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(80, 30);
             this.button1.TabIndex = 3;
             this.button1.Text = "注册";
             this.button1.UseVisualStyleBackColor = true;

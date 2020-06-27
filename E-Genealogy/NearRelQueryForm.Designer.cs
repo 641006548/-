@@ -48,7 +48,7 @@
             // textB7
             // 
             this.textB7.Location = new System.Drawing.Point(225, 423);
-            this.textB7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textB7.Margin = new System.Windows.Forms.Padding(4);
             this.textB7.Name = "textB7";
             this.textB7.ReadOnly = true;
             this.textB7.Size = new System.Drawing.Size(489, 25);
@@ -57,6 +57,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Location = new System.Drawing.Point(107, 434);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
@@ -67,7 +68,7 @@
             // textB6
             // 
             this.textB6.Location = new System.Drawing.Point(225, 367);
-            this.textB6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textB6.Margin = new System.Windows.Forms.Padding(4);
             this.textB6.Name = "textB6";
             this.textB6.ReadOnly = true;
             this.textB6.Size = new System.Drawing.Size(489, 25);
@@ -76,6 +77,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Location = new System.Drawing.Point(107, 378);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
@@ -86,7 +88,7 @@
             // textB5
             // 
             this.textB5.Location = new System.Drawing.Point(225, 311);
-            this.textB5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textB5.Margin = new System.Windows.Forms.Padding(4);
             this.textB5.Name = "textB5";
             this.textB5.ReadOnly = true;
             this.textB5.Size = new System.Drawing.Size(489, 25);
@@ -95,6 +97,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Location = new System.Drawing.Point(107, 322);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
@@ -105,7 +108,7 @@
             // textB4
             // 
             this.textB4.Location = new System.Drawing.Point(225, 254);
-            this.textB4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textB4.Margin = new System.Windows.Forms.Padding(4);
             this.textB4.Name = "textB4";
             this.textB4.ReadOnly = true;
             this.textB4.Size = new System.Drawing.Size(216, 25);
@@ -114,6 +117,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Location = new System.Drawing.Point(107, 266);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
@@ -124,7 +128,7 @@
             // textB3
             // 
             this.textB3.Location = new System.Drawing.Point(225, 198);
-            this.textB3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textB3.Margin = new System.Windows.Forms.Padding(4);
             this.textB3.Name = "textB3";
             this.textB3.ReadOnly = true;
             this.textB3.Size = new System.Drawing.Size(216, 25);
@@ -133,6 +137,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Location = new System.Drawing.Point(107, 210);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
@@ -143,7 +148,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(225, 134);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 29);
             this.button1.TabIndex = 19;
@@ -154,7 +159,7 @@
             // textB2
             // 
             this.textB2.Location = new System.Drawing.Point(225, 82);
-            this.textB2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textB2.Margin = new System.Windows.Forms.Padding(4);
             this.textB2.Name = "textB2";
             this.textB2.Size = new System.Drawing.Size(216, 25);
             this.textB2.TabIndex = 18;
@@ -162,7 +167,7 @@
             // textB1
             // 
             this.textB1.Location = new System.Drawing.Point(225, 36);
-            this.textB1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textB1.Margin = new System.Windows.Forms.Padding(4);
             this.textB1.Name = "textB1";
             this.textB1.Size = new System.Drawing.Size(216, 25);
             this.textB1.TabIndex = 17;
@@ -170,6 +175,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Location = new System.Drawing.Point(104, 93);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
@@ -180,6 +186,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Location = new System.Drawing.Point(107, 47);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
@@ -191,6 +198,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(982, 553);
             this.Controls.Add(this.textB7);
             this.Controls.Add(this.label7);
@@ -207,7 +215,7 @@
             this.Controls.Add(this.textB1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "NearRelQueryForm";
             this.Text = "近亲查询";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

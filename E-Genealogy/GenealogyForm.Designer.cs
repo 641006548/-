@@ -37,6 +37,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("宋体", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label2.Location = new System.Drawing.Point(414, 109);
             this.label2.Name = "label2";
@@ -81,6 +82,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(982, 553);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
@@ -89,7 +91,6 @@
             this.Name = "GenealogyForm";
             this.Text = "族谱管理";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.GenealogyForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

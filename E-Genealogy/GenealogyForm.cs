@@ -69,8 +69,7 @@ namespace E_Genealogy
                     conn.Close();
                     i = 1;
                     this.Close();
-                    LoginForm login = new LoginForm();
-                    login.Show();
+                    Application.Exit();
                 }
                 catch (Exception msg)
                 {
@@ -83,11 +82,6 @@ namespace E_Genealogy
         {
             ModifyGenealogyForm modifyGenealogyForm = new ModifyGenealogyForm(this.genealogyID);
             modifyGenealogyForm.Show();
-        }
-
-        private void GenealogyForm_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void button1_Click(object sender, EventArgs e)

@@ -26,6 +26,17 @@ namespace E_Genealogy
             this.loginForm.Close();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            GenealogyTreeView genealogyTreeView = new GenealogyTreeView(this.genealogyID)
+            {
+                TopLevel = false,
+                Dock = DockStyle.Fill,
+                FormBorderStyle = FormBorderStyle.None
+            };
+            mainPanel.Controls.Add(genealogyTreeView);
+            genealogyTreeView.Show();
+        }
         private void Button2_Click(object sender, EventArgs e)
         {
             PerInfQueryForm perInfQuery = new PerInfQueryForm
