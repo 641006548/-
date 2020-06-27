@@ -1,6 +1,6 @@
 ﻿namespace E_Genealogy
 {
-    partial class NearRelQuery
+    partial class NearRelQueryForm
     {
         /// <summary>
         /// Required designer variable.
@@ -47,95 +47,105 @@
             // 
             // textB7
             // 
-            this.textB7.Location = new System.Drawing.Point(334, 345);
+            this.textB7.Location = new System.Drawing.Point(225, 423);
+            this.textB7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textB7.Name = "textB7";
             this.textB7.ReadOnly = true;
-            this.textB7.Size = new System.Drawing.Size(368, 21);
+            this.textB7.Size = new System.Drawing.Size(489, 25);
             this.textB7.TabIndex = 29;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(245, 354);
+            this.label7.Location = new System.Drawing.Point(107, 434);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(77, 12);
+            this.label7.Size = new System.Drawing.Size(97, 15);
             this.label7.TabIndex = 28;
             this.label7.Text = "直系亲属晚辈";
             // 
             // textB6
             // 
-            this.textB6.Location = new System.Drawing.Point(334, 300);
+            this.textB6.Location = new System.Drawing.Point(225, 367);
+            this.textB6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textB6.Name = "textB6";
             this.textB6.ReadOnly = true;
-            this.textB6.Size = new System.Drawing.Size(368, 21);
+            this.textB6.Size = new System.Drawing.Size(489, 25);
             this.textB6.TabIndex = 27;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(245, 309);
+            this.label6.Location = new System.Drawing.Point(107, 378);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(77, 12);
+            this.label6.Size = new System.Drawing.Size(97, 15);
             this.label6.TabIndex = 26;
             this.label6.Text = "直系亲属同辈";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // textB5
             // 
-            this.textB5.Location = new System.Drawing.Point(334, 255);
+            this.textB5.Location = new System.Drawing.Point(225, 311);
+            this.textB5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textB5.Name = "textB5";
             this.textB5.ReadOnly = true;
-            this.textB5.Size = new System.Drawing.Size(368, 21);
+            this.textB5.Size = new System.Drawing.Size(489, 25);
             this.textB5.TabIndex = 25;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(245, 264);
+            this.label5.Location = new System.Drawing.Point(107, 322);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(77, 12);
+            this.label5.Size = new System.Drawing.Size(97, 15);
             this.label5.TabIndex = 24;
             this.label5.Text = "直系亲属长辈";
             // 
             // textB4
             // 
-            this.textB4.Location = new System.Drawing.Point(334, 210);
+            this.textB4.Location = new System.Drawing.Point(225, 254);
+            this.textB4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textB4.Name = "textB4";
             this.textB4.ReadOnly = true;
-            this.textB4.Size = new System.Drawing.Size(163, 21);
+            this.textB4.Size = new System.Drawing.Size(216, 25);
             this.textB4.TabIndex = 23;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(245, 219);
+            this.label4.Location = new System.Drawing.Point(107, 266);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(29, 12);
+            this.label4.Size = new System.Drawing.Size(37, 15);
             this.label4.TabIndex = 22;
             this.label4.Text = "性别";
             // 
             // textB3
             // 
-            this.textB3.Location = new System.Drawing.Point(334, 165);
+            this.textB3.Location = new System.Drawing.Point(225, 198);
+            this.textB3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textB3.Name = "textB3";
             this.textB3.ReadOnly = true;
-            this.textB3.Size = new System.Drawing.Size(163, 21);
+            this.textB3.Size = new System.Drawing.Size(216, 25);
             this.textB3.TabIndex = 21;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(245, 174);
+            this.label3.Location = new System.Drawing.Point(107, 210);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(29, 12);
+            this.label3.Size = new System.Drawing.Size(37, 15);
             this.label3.TabIndex = 20;
             this.label3.Text = "姓名";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(334, 114);
+            this.button1.Location = new System.Drawing.Point(225, 134);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(100, 29);
             this.button1.TabIndex = 19;
             this.button1.Text = "搜索";
             this.button1.UseVisualStyleBackColor = true;
@@ -143,42 +153,45 @@
             // 
             // textB2
             // 
-            this.textB2.Location = new System.Drawing.Point(334, 72);
+            this.textB2.Location = new System.Drawing.Point(225, 82);
+            this.textB2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textB2.Name = "textB2";
-            this.textB2.Size = new System.Drawing.Size(163, 21);
+            this.textB2.Size = new System.Drawing.Size(216, 25);
             this.textB2.TabIndex = 18;
             // 
             // textB1
             // 
-            this.textB1.Location = new System.Drawing.Point(334, 35);
+            this.textB1.Location = new System.Drawing.Point(225, 36);
+            this.textB1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textB1.Name = "textB1";
-            this.textB1.Size = new System.Drawing.Size(163, 21);
+            this.textB1.Size = new System.Drawing.Size(216, 25);
             this.textB1.TabIndex = 17;
-            this.textB1.TextChanged += new System.EventHandler(this.textB1_TextChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(243, 81);
+            this.label2.Location = new System.Drawing.Point(104, 93);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 12);
+            this.label2.Size = new System.Drawing.Size(67, 15);
             this.label2.TabIndex = 16;
             this.label2.Text = "族谱编号";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(245, 44);
+            this.label1.Location = new System.Drawing.Point(107, 47);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(29, 12);
+            this.label1.Size = new System.Drawing.Size(37, 15);
             this.label1.TabIndex = 15;
             this.label1.Text = "姓名";
             // 
-            // NearRelQuery
+            // NearRelQueryForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(982, 553);
             this.Controls.Add(this.textB7);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.textB6);
@@ -194,9 +207,10 @@
             this.Controls.Add(this.textB1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "NearRelQuery";
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name = "NearRelQueryForm";
             this.Text = "近亲查询";
-            this.Load += new System.EventHandler(this.NearRelQuery_Load);
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
             this.PerformLayout();
 

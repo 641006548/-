@@ -13,8 +13,10 @@ namespace E_Genealogy
 {
     public partial class ModifyGenealogyForm : Form
     {
-        public ModifyGenealogyForm()
-        {   
+        private string genealogyID;
+        public ModifyGenealogyForm(string genealogyID)
+        {
+            this.genealogyID = genealogyID;
             InitializeComponent();
             DisplayInformation();
          }
@@ -22,8 +24,7 @@ namespace E_Genealogy
         private void DisplayInformation()//在界面显示族谱信息  
         {
             //得到Genealogy_ID
-            GenealogyForm genealogyForm = new GenealogyForm();
-            String geneID = genealogyForm.GetGeneaID();
+            String geneID = genealogyID;
 
             //连接数据库
             string connString = @"Data Source = .; 
@@ -48,7 +49,7 @@ namespace E_Genealogy
                 string lastName = reader1["Genealogy_Lastname"].ToString();
                 string introduction = reader1["Genealogy_introduction"].ToString();
                 GenealogyName.Text = name.ToString();
-                textBox1.Text = "*******".ToString();
+                textBox1.Text = "******".ToString();
                 GenealogyLastname.Text = lastName.ToString();
                 Introduction.Text = introduction.ToString();
                 conn.Close();
@@ -61,8 +62,7 @@ namespace E_Genealogy
 
         private void button1_Click(object sender, EventArgs e)
         {
-            GenealogyForm genealogyForm = new GenealogyForm();
-            String geneID = genealogyForm.GetGeneaID(); 
+            String geneID = this.genealogyID; 
 
             //连接的数据库的信息
             string connString = @"Data Source = .; 
@@ -89,23 +89,7 @@ namespace E_Genealogy
             {
                 MessageBox.Show("修改失败！\n出错原因：" + msg.Message);
             }
-
             conn.Close();
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ModifyGenealogyForm_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

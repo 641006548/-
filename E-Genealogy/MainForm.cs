@@ -12,10 +12,12 @@ namespace E_Genealogy
 {
     public partial class MainForm : Form
     {
+        private string genealogyID;
         private readonly LoginForm loginForm;
-        public MainForm(LoginForm loginForm)
+        public MainForm(LoginForm loginForm, string genealogyID)
         {
             this.loginForm = loginForm;
+            this.genealogyID = genealogyID;
             InitializeComponent();
         }
 
@@ -24,31 +26,70 @@ namespace E_Genealogy
             this.loginForm.Close();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void Button2_Click(object sender, EventArgs e)
         {
-            
-         MemberManage mm = new MemberManage();
-         mm.Show();
-
-
+            PerInfQueryForm perInfQuery = new PerInfQueryForm
+            {
+                TopLevel = false,
+                Dock = DockStyle.Fill,
+                FormBorderStyle = FormBorderStyle.None
+            };
+            mainPanel.Controls.Add(perInfQuery);
+            perInfQuery.Show();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void Button3_Click(object sender, EventArgs e)
         {
-            GenealogyForm genealogyForm = new GenealogyForm();
-            genealogyForm.Show();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            NearRelQuery nearRelQuery = new NearRelQuery();
+            NearRelQueryForm nearRelQuery = new NearRelQueryForm
+            {
+                TopLevel = false,
+                Dock = DockStyle.Fill,
+                FormBorderStyle = FormBorderStyle.None
+            };
+            mainPanel.Controls.Add(nearRelQuery);
             nearRelQuery.Show();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Button4_Click(object sender, EventArgs e)
         {
-            PerInfQuery perInfQuery = new PerInfQuery();
-            perInfQuery.Show();
+            GenealogyForm genealogyForm = new GenealogyForm
+            {
+                TopLevel = false,
+                Dock = DockStyle.Fill,
+                FormBorderStyle = FormBorderStyle.None
+            };
+            genealogyForm.GetGeneaID = this.genealogyID;
+            mainPanel.Controls.Add(genealogyForm);
+            genealogyForm.Show();
+        }
+
+        private void Button5_Click(object sender, EventArgs e)
+        {
+
+            MemberManage mm = new MemberManage
+            {
+                TopLevel = false,
+                Dock = DockStyle.Fill,
+                FormBorderStyle = FormBorderStyle.None
+            };
+            mainPanel.Controls.Add(mm);
+            mm.Show();
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            this.mainPanel.Width = this.Width - treeViewPanel.Width;
+            this.mainPanel.Height = this.Height;
+            mainPanel.Location = new Point(treeViewPanel.Location.X + treeViewPanel.Width, 0);
+        }
+
+        private void mainPanel_ControlAdded(object sender, ControlEventArgs e)
+        {
+            if (mainPanel.Controls.Count > 1)
+            {
+                mainPanel.Controls.RemoveAt(0);
+            }
+            this.Text = "电子族谱 (" + mainPanel.Controls[0].Text + ")";
         }
     }
 }

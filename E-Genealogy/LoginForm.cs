@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace E_Genealogy
 {
@@ -61,19 +62,27 @@ namespace E_Genealogy
 
         private void LoginBT_Click(object sender, EventArgs e)
         {
+
+            string connStr = @"Server=.; Initial Catalog=E-Genealogy; Integrated Security=True";
+            string id = genealogyIDBOX.Text;
+            SqlConnection conn = new SqlConnection(connStr);
+            conn.Open();//连接数据库
+            string sql = @"SELECT * FROM Genealogy WHERE Genealogy_ID='" + genealogyIDBOX.Text + "'";
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            SqlDataReader dr = cmd.ExecuteReader();
+            if (!dr.Read()) 
+            {
+                MessageBox.Show("族谱ID错误！请重试！","登录出错",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                return;
+            }
+            if (!(passwordBOX.Text == "admin" || passwordBOX.Text == "123456" || passwordBOX.Text == "123"))
+            {
+                MessageBox.Show("密码错误！请重试！", "登录出错", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             //密码验证通过
-            //if (passwordBOX.Text == "admin")
-            //{
-            //    this.Hide();
-            //    MainForm mainForm = new MainForm(this);
-            //    mainForm.Show();
-            //}
-            //else
-            //{
-            //    MessageBox.Show("密码错误！请重试！", "登录错误", MessageBoxButtons.OK,MessageBoxIcon.Error);
-            //}
             this.Hide();
-            MainForm mainForm = new MainForm(this);
+            MainForm mainForm = new MainForm(this,genealogyIDBOX.Text);
             mainForm.Show();
         }
 

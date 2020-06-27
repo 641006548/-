@@ -60,7 +60,7 @@
             // 
             // loginBT
             // 
-            this.loginBT.Location = new System.Drawing.Point(227, 289);
+            this.loginBT.Location = new System.Drawing.Point(289, 289);
             this.loginBT.Name = "loginBT";
             this.loginBT.Size = new System.Drawing.Size(75, 23);
             this.loginBT.TabIndex = 0;
@@ -70,7 +70,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(497, 289);
+            this.button1.Location = new System.Drawing.Point(424, 289);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 3;

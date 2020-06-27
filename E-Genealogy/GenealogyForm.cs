@@ -13,18 +13,13 @@ namespace E_Genealogy
 {
     public partial class GenealogyForm : Form
     {
+        private string genealogyID;
         public int i = 0;
         public GenealogyForm()
         {
             InitializeComponent();
         }
-
-        public String GetGeneaID()
-        {
-            String genealogyID;
-            genealogyID = "201815";
-            return genealogyID;
-        }
+        public string GetGeneaID { get => genealogyID; set => genealogyID = value; }
 
         public int CloseMainForm()
         {
@@ -34,7 +29,7 @@ namespace E_Genealogy
         private void button2_Click(object sender, EventArgs e)
         {
 
-            String geneID = GetGeneaID();//得到Genealogy_ID
+            String geneID = GetGeneaID;//得到Genealogy_ID
 
             //提醒是否确认删除
             DialogResult dr = MessageBox.Show("真的要删除吗？",
@@ -59,9 +54,9 @@ namespace E_Genealogy
 
                 //执行sql语句并捕捉异常
                 SqlConnection conn = new SqlConnection(connString);
-                conn.Open();               
+                conn.Open();
                 try
-                {   
+                {
                     SqlCommand cmd1 = new SqlCommand(sql1, conn);
                     cmd1.ExecuteNonQuery();
                     SqlCommand cmd2 = new SqlCommand(sql2, conn);
@@ -80,13 +75,13 @@ namespace E_Genealogy
                 catch (Exception msg)
                 {
                     MessageBox.Show("删除失败！\n出错原因：" + msg.Message);
-                }               
+                }
             }
         }
 
         private void button3_Click(object sender, EventArgs e)//点击修改族谱跳转到修改族谱界面
         {
-            ModifyGenealogyForm modifyGenealogyForm = new ModifyGenealogyForm();
+            ModifyGenealogyForm modifyGenealogyForm = new ModifyGenealogyForm(this.genealogyID);
             modifyGenealogyForm.Show();
         }
 
@@ -97,7 +92,7 @@ namespace E_Genealogy
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ViewGenealogy view = new ViewGenealogy();
+            ViewGenealogy view = new ViewGenealogy(this.genealogyID);
             view.Show();
         }
     }

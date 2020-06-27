@@ -54,3 +54,10 @@ D:\Work\THEPractice\E-Genealogy\obj\Debug\E-Genealogy.csproj.GenerateResource.ca
 D:\Work\THEPractice\E-Genealogy\obj\Debug\E-Genealogy.csproj.CoreCompileInputs.cache
 D:\Work\THEPractice\E-Genealogy\obj\Debug\E-Genealogy.exe
 D:\Work\THEPractice\E-Genealogy\obj\Debug\E-Genealogy.pdb
+D:\WorkSpace\MyGit\THEPractice\E-Genealogy\obj\Debug\E_Genealogy.CreatGenealogyForm.resources
+D:\WorkSpace\MyGit\THEPractice\E-Genealogy\obj\Debug\E_Genealogy.GenealogyForm.resources
+D:\WorkSpace\MyGit\THEPractice\E-Genealogy\obj\Debug\E_Genealogy.MemberManage.resources
+D:\WorkSpace\MyGit\THEPractice\E-Genealogy\obj\Debug\E_Genealogy.ModifyGenealogyForm.resources
+D:\WorkSpace\MyGit\THEPractice\E-Genealogy\obj\Debug\E_Genealogy.ViewGenealogy.resources
+D:\WorkSpace\MyGit\THEPractice\E-Genealogy\obj\Debug\E_Genealogy.PerInfQueryForm.resources
+D:\WorkSpace\MyGit\THEPractice\E-Genealogy\obj\Debug\E_Genealogy.NearRelQueryForm.resources

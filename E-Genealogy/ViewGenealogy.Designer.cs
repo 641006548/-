@@ -134,7 +134,6 @@
             this.Controls.Add(this.GenealogyLastname);
             this.Name = "ViewGenealogy";
             this.Text = "ViewGenealogy";
-            this.Load += new System.EventHandler(this.ViewGenealogy_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

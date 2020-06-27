@@ -11,22 +11,16 @@ using System.Windows.Forms;
 
 namespace E_Genealogy
 {
-    public partial class PerInfQuery : Form
+    public partial class PerInfQueryForm : Form
     {
-        public PerInfQuery()
+        public PerInfQueryForm()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
             string connStr = @"Server=.; Initial Catalog=E-Genealogy; Integrated Security=True";
-            string name = textBox1.Text;
             SqlConnection conn = new SqlConnection(connStr);
             conn.Open();//连接数据库
             string sql = @"SELECT * FROM Member WHERE Member_name='" + textBox1.Text + "'AND Genealogy_ID='" + textBox2.Text + "'";//通过成员姓名和族谱ID来进行条件比较

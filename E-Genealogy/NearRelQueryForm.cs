@@ -11,26 +11,11 @@ using System.Windows.Forms;
 
 namespace E_Genealogy
 {
-    public partial class NearRelQuery : Form
+    public partial class NearRelQueryForm : Form
     {
-        public NearRelQuery()
+        public NearRelQueryForm()
         {
             InitializeComponent();
-        }
-
-        private void NearRelQuery_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textB1_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -60,7 +45,7 @@ namespace E_Genealogy
             if (!dr.Read())
             {
                 MessageBox.Show("该成员的父亲无法查询！");
-                return;
+                goto InvalidParents;
             }
             string motherID = dr["Member_spouseID"].ToString();
             textB5.Text = "父亲：" + dr["Member_name"].ToString();
@@ -75,7 +60,7 @@ namespace E_Genealogy
                 return;
             }
             textB5.Text += "  母亲：" + dr["Member_name"].ToString();
-            conn.Close();
+        InvalidParents: conn.Close();
             conn.Open();
             sql = @"SELECT Member_name FROM Member WHERE Member_sex ='男' AND Member_father=" + fatherID + " AND Member_ID<>" + ID;
             cmd = new SqlCommand(sql, conn);
@@ -94,7 +79,7 @@ namespace E_Genealogy
             }
             conn.Close();
             conn.Open();
-            sql = @"SELECT Member_name FROM Member WHERE Member_sex ='女' AND Member_father=" + fatherID+" AND Member_ID<>"+ID;
+            sql = @"SELECT Member_name FROM Member WHERE Member_sex ='女' AND Member_father=" + fatherID + " AND Member_ID<>" + ID;
             cmd = new SqlCommand(sql, conn);
             dr = cmd.ExecuteReader();
             if (!dr.Read())
@@ -124,7 +109,7 @@ namespace E_Genealogy
                 textB7.Text = "儿子：";
                 do
                 {
-                    textB7.Text +=  dr["Member_name"].ToString() + "；";
+                    textB7.Text += dr["Member_name"].ToString() + "；";
                 } while (dr.Read());
             }
             conn.Close();

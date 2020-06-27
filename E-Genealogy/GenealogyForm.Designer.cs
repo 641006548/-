@@ -38,7 +38,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("宋体", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(328, 106);
+            this.label2.Location = new System.Drawing.Point(414, 109);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(137, 30);
             this.label2.TabIndex = 18;
@@ -47,7 +47,7 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button3.Location = new System.Drawing.Point(333, 293);
+            this.button3.Location = new System.Drawing.Point(419, 296);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(132, 51);
             this.button3.TabIndex = 17;
@@ -58,7 +58,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button2.Location = new System.Drawing.Point(556, 293);
+            this.button2.Location = new System.Drawing.Point(642, 296);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(141, 51);
             this.button2.TabIndex = 16;
@@ -69,7 +69,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button1.Location = new System.Drawing.Point(106, 293);
+            this.button1.Location = new System.Drawing.Point(192, 296);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(132, 51);
             this.button1.TabIndex = 19;
@@ -81,13 +81,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(982, 553);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Name = "GenealogyForm";
-            this.Text = "GenealogyForm";
+            this.Text = "族谱管理";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.GenealogyForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

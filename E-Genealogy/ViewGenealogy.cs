@@ -13,17 +13,18 @@ namespace E_Genealogy
 {
     public partial class ViewGenealogy : Form
     {
-        public ViewGenealogy()
+        private string genealogyID;
+        public ViewGenealogy(string genealogyID)
         {
+            this.genealogyID = genealogyID;
             InitializeComponent();
             DisplayInformation();
         }
 
         private void DisplayInformation()//在界面显示族谱信息  
         {
-            //得到Genealogy_ID
-            GenealogyForm genealogyForm = new GenealogyForm();
-            String geneID = genealogyForm.GetGeneaID();
+            //得到genealogy_ID
+            String geneID = genealogyID;
 
             //连接数据库
             string connString = @"Data Source = .; 
@@ -62,11 +63,6 @@ namespace E_Genealogy
             GenealogyID.ReadOnly = true;
             GenealogyLastname.ReadOnly = true;
             Introduction.ReadOnly = true;
-        }
-
-        private void ViewGenealogy_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

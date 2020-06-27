@@ -86,13 +86,17 @@
     <Compile Include="ModifyGenealogyForm.Designer.cs">
       <DependentUpon>ModifyGenealogyForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="NearRelQuery.cs" />
-    <Compile Include="NearRelQuery.Designer.cs">
-      <DependentUpon>NearRelQuery.cs</DependentUpon>
+    <Compile Include="NearRelQueryForm.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PerInfQuery.cs" />
-    <Compile Include="PerInfQuery.Designer.cs">
-      <DependentUpon>PerInfQuery.cs</DependentUpon>
+    <Compile Include="NearRelQueryForm.Designer.cs">
+      <DependentUpon>NearRelQueryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PerInfQueryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PerInfQueryForm.Designer.cs">
+      <DependentUpon>PerInfQueryForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -120,11 +124,11 @@
     <EmbeddedResource Include="ModifyGenealogyForm.resx">
       <DependentUpon>ModifyGenealogyForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NearRelQuery.resx">
-      <DependentUpon>NearRelQuery.cs</DependentUpon>
+    <EmbeddedResource Include="NearRelQueryForm.resx">
+      <DependentUpon>NearRelQueryForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PerInfQuery.resx">
-      <DependentUpon>PerInfQuery.cs</DependentUpon>
+    <EmbeddedResource Include="PerInfQueryForm.resx">
+      <DependentUpon>PerInfQueryForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

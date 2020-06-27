@@ -87,7 +87,6 @@
             this.GenealogyName.Name = "GenealogyName";
             this.GenealogyName.Size = new System.Drawing.Size(157, 25);
             this.GenealogyName.TabIndex = 25;
-            this.GenealogyName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label2
             // 
@@ -123,12 +122,12 @@
             this.label5.Size = new System.Drawing.Size(49, 20);
             this.label5.TabIndex = 39;
             this.label5.Text = "密码";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(444, 118);
             this.textBox1.Name = "textBox1";
+            this.textBox1.PasswordChar = '*';
             this.textBox1.Size = new System.Drawing.Size(157, 25);
             this.textBox1.TabIndex = 40;
             // 
@@ -149,7 +148,6 @@
             this.Controls.Add(this.GenealogyLastname);
             this.Name = "ModifyGenealogyForm";
             this.Text = "ModifyGenealogyForm";
-            this.Load += new System.EventHandler(this.ModifyGenealogyForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
